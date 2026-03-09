@@ -42,7 +42,7 @@ if analyze_btn:
         with st.spinner("Analyzing..."):
             try:
                 genai.configure(api_key=api_key)
-                model = genai.GenerativeModel("gemini-1.5-flash")
+                model = genai.GenerativeModel("gemini-2.0-flash")
 
                 prompt = f"""You are a professional fact-checker and media literacy expert. Analyze the following {"headline" if input_type == "Headline only" else "article"} for signs of fake news, misinformation, or clickbait.
 
